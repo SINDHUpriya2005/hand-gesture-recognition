@@ -1,0 +1,4 @@
+flask==3.0.3
+numpy==1.26.4
+Pillow==10.4.0
+tflite-runtime==2.14.0   # or tensorflow==2.14.0 if you prefer full TF (but tflite-runtime is smaller)
