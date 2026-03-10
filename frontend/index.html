@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hand Gesture Recognition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" /> <!-- optional: removes default favicon request -->
+</head>
+<body>
+  <div class="container">
+    <h1>🤲 Hand Gesture Recognition</h1>
+    <p>Show one of these gestures to the camera:</p>
+    <div class="gestures-list">
+      <span>✊ Fist</span>
+      <span>👌 OK</span>
+      <span>✌️ Peace</span>
+      <span>🖐️ Stop</span>
+      <span>👍 Thumbs Up</span>
+    </div>
+
+    <div class="video-container">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+
+    <button id="captureBtn">Capture & Predict</button>
+
+    <div id="result" class="result-box">
+      <div id="gesture">Waiting for gesture...</div>
+      <div id="confidence"></div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
